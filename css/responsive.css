@@ -1,0 +1,388 @@
+/* Responsive CSS for Khaled Elnezily Portfolio */
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large devices (desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.3rem;
+  }
+  
+  .about-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .contact-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .project-slide {
+    height: 500px;
+  }
+}
+
+/* Small devices (landscape phones, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .section {
+    padding: 4rem 0;
+  }
+  
+  .about-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .contact-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .timeline::after {
+    left: 31px;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .timeline-item.right {
+    left: 0;
+  }
+  
+  .timeline-item.left::after,
+  .timeline-item.right::after {
+    left: 21px;
+  }
+  
+  .project-slide {
+    height: 400px;
+  }
+  
+  .project-header-title {
+    font-size: 2.5rem;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--white);
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right var(--transition-medium);
+    z-index: 1001;
+  }
+  
+  .nav-links.active {
+    right: 0;
+  }
+  
+  .nav-links li {
+    margin: 1.5rem 0;
+  }
+  
+  .hamburger {
+    display: block;
+    z-index: 1002;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-medium);
+    z-index: 1000;
+  }
+  
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .container {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .about-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    height: 250px;
+  }
+  
+  .contact-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .timeline::after {
+    left: 31px;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  .timeline-item.right {
+    left: 0;
+  }
+  
+  .timeline-item.left::after,
+  .timeline-item.right::after {
+    left: 21px;
+  }
+  
+  .project-slide {
+    height: 300px;
+  }
+  
+  .project-header {
+    height: 40vh;
+  }
+  
+  .project-header-title {
+    font-size: 2rem;
+  }
+  
+  .project-header-location {
+    font-size: 1rem;
+  }
+  
+  .project-navigation {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .nav-project.next {
+    align-self: flex-end;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--white);
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: right var(--transition-medium);
+    z-index: 1001;
+  }
+  
+  .nav-links.active {
+    right: 0;
+  }
+  
+  .nav-links li {
+    margin: 1.5rem 0;
+  }
+  
+  .hamburger {
+    display: block;
+    z-index: 1002;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-medium);
+    z-index: 1000;
+  }
+  
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .btn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.8rem;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+  }
+  
+  .footer-links li {
+    margin: 0.5rem 0;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+  .project-overlay {
+    opacity: 1;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent 70%);
+  }
+  
+  .nav-links a::after {
+    display: none;
+  }
+  
+  .btn:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .social-link:hover {
+    transform: none;
+  }
+  
+  .project-card:hover {
+    transform: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card:hover .project-image {
+    transform: none;
+  }
+  
+  .nav-project:hover {
+    transform: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .header, .footer, .back-to-top, .project-navigation, .related-projects {
+    display: none;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: none;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #000;
+    background: #fff;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .project-slide {
+    height: auto;
+    page-break-inside: avoid;
+  }
+  
+  .project-header {
+    height: auto;
+  }
+  
+  .project-header-content {
+    color: #000;
+  }
+  
+  .project-header-bg {
+    filter: none;
+  }
+}

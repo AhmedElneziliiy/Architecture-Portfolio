@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khaled Elnezily - Landscape Architect Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+<body>
+    <!-- Page Transition -->
+    <div class="page-transition"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Khaled <span>Elnezily</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Overlay for Mobile Menu -->
+    <div class="overlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles"></div>
+        <img src="assets/images/hero-bg.jpg" alt="Hero Background" class="hero-bg">
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <h1 class="hero-title text-reveal">Khaled Elnezily</h1>
+                <h2 class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">Landscape Architect & Urban Designer</h2>
+                <p class="hero-text" data-aos="fade-up" data-aos-delay="400">Creating sustainable and visually stunning outdoor environments that enhance the human experience and respect the natural world.</p>
+                <a href="#projects" class="btn" data-aos="fade-up" data-aos-delay="600">View Projects</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="assets/images/profile.jpg" alt="Khaled Elnezily">
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h3>Experienced Landscape Architect</h3>
+                    <p>I am a dedicated Landscape Architect with extensive experience in Landscape & Urban Design. My passion lies in creating harmonious outdoor spaces that blend functionality with aesthetic appeal, while prioritizing sustainability and environmental consciousness.</p>
+                    <p>With a Bachelor's degree focused in Landscape design, City/Urban, Community and Regional Planning, I bring a comprehensive understanding of both the technical and artistic aspects of landscape architecture to every project.</p>
+                    
+                    <div class="skills">
+                        <h3>Professional Skills</h3>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>AutoCAD</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Urban Planning</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Tender Planning</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>SketchUp</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>Presentation Skills</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="95"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            
+            <div class="projects-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="resort">Resorts</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="urban">Urban Planning</button>
+            </div>
+            
+            <div class="projects-grid" data-aos="fade-up" data-aos-delay="200">
+                <!-- Project 1 -->
+                <div class="project-card stagger-item residential" data-aos="fade-up">
+                    <img src="assets/images/projects/01_PRIVATE_VILLA/cover.png" alt="PRIVATE VILLA" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">PRIVATE VILLA</h3>
+                        <p class="project-location">Borg El Arab</p>
+                        <a href="projects/01_PRIVATE_VILLA.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card stagger-item resort" data-aos="fade-up">
+                    <img src="assets/images/projects/02_GARAWLAH_RESORT/cover.png" alt="GARAWLAH RESORT" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">GARAWLAH RESORT</h3>
+                        <p class="project-location">North Coast</p>
+                        <a href="projects/02_GARAWLAH_RESORT.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card stagger-item resort" data-aos="fade-up">
+                    <img src="assets/images/projects/03_CLUB_LAND/cover.png" alt="GARAWLAH RESORT" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">CLUB LAND</h3>
+                        <p class="project-location">October 6th, Egypt</p>
+                        <a href="projects/03_CLUB_LAND.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card stagger-item urban" data-aos="fade-up">
+                    <img src="assets/images/projects/04_AL_KHAMAEL_CITY/cover.png" alt="AL KHAMAEL CITY" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">AL KHAMAEL CITY</h3>
+                        <p class="project-location">October 6th</p>
+                        <a href="projects/04_AL_KHAMAEL_CITY.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="project-card stagger-item commercial" data-aos="fade-up">
+                    <img src="assets/images/projects/05_MALL_OF_MANSOURA/cover.png" alt="MALL OF MANSOURA" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">MALL OF MANSOURA</h3>
+                        <p class="project-location">Mansoura City</p>
+                        <a href="projects/05_MALL_OF_MANSOURA.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="project-card stagger-item commercial" data-aos="fade-up">
+                    <img src="assets/images/projects/06_SIERRA_FACTORY/cover.png" alt="MALL OF MANSOURA" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">SIERRA FACTORY</h3>
+                        <p class="project-location">Industrial Zone, Egypt</p>
+                        <a href="projects/06_SIERRA_FACTORY.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+                <!-- Project 7 -->
+                <div class="project-card stagger-item resort" data-aos="fade-up">
+                    <img src="assets/images/projects/07_KAI_RESORT/cover.png" alt="KAI RESORT" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">KAI RESORT</h3>
+                        <p class="project-location">Ain Sokhna</p>
+                        <a href="projects/07_KAI_RESORT.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+                <!-- Project 8 -->
+                <div class="project-card stagger-item commercial" data-aos="fade-up">
+                    <img src="assets/images/projects/08_AL_KHAMEL_CITY_MALL/cover.png" alt="AL KHAMEL CITY MALL" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">AL KHAMEL CITY MALL</h3>
+                        <p class="project-location">October 6th</p>
+                        <a href="projects/08_AL_KHAMEL_CITY_MALL.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+                <!-- Project 9 -->
+                <div class="project-card stagger-item commercial" data-aos="fade-up">
+                    <img src="assets/images/projects/09_CLEOPATRA_MALL/cover.png" alt="AL KHAMEL CITY MALL" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">CLEOPATRA MALL</h3>
+                        <p class="project-location">October 6th, Egypt</p>
+                        <a href="projects/09_CLEOPATRA_MALL.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 10 -->
+                <div class="project-card stagger-item residential" data-aos="fade-up">
+                    <img src="assets/images/projects/10_DRHASSAN_PRIVATE_VILLA.png" alt="DR.HASSAN PRIVATE VILLA" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">DR.HASSAN PRIVATE VILLA</h3>
+                        <p class="project-location">El Shrouq</p>
+                        <a href="projects/10_DRHASSANPRIVATE_VILLA.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 11 -->
+                <div class="project-card stagger-item resort" data-aos="fade-up">
+                    <img src="assets/images/projects/11_RASEEL_RESORT/cover.png" alt="RASEEL RESORT" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">RASEEL RESORT</h3>
+                        <p class="project-location">Dammam</p>
+                        <a href="projects/11_RASEEL_RESORT.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+
+                <!-- Project 12 -->
+                <div class="project-card stagger-item resort" data-aos="fade-up">
+                    <img src="assets/images/projects/12_BLUE_RESORT/cover.png" alt="BLUE RESORT" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">BLUE RESORT</h3>
+                        <p class="project-location">Ain Sokhna</p>
+                        <a href="projects/12_BLUE_RESORT.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+                <!-- Project 13 -->
+                <div class="project-card stagger-item commercial" data-aos="fade-up">
+                    <img src="assets/images/projects/13_PALM_HILLS_TRADE_CENTER/cover.png" alt="PALM HILLS TRADE CENTER" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">PALM HILLS TRADE CENTER</h3>
+                        <p class="project-location">Zayed City</p>
+                        <a href="projects/13_PALM_HILLS_TRADE_CENTER.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+                <!-- Project 14 -->
+                <div class="project-card stagger-item commercial" data-aos="fade-up">
+                    <img src="assets/images/projects/14_ASMARAT_YOUTH_CLUB/cover.png" alt="SAFWA MALL" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">ASMARAT YOUTH CLUB</h3>
+                        <p class="project-location">Cairo, Egypt</p>
+                        <a href="projects/14_ASMARAT_YOUTH_CLUB.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+                <!-- Project 15 -->
+                <div class="project-card stagger-item commercial" data-aos="fade-up">
+                    <img src="assets/images/projects/15_ETERNA_HEALTHCARE/cover.png" alt="SAFWA MALL" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">ETERNA HEALTHCARE</h3>
+                        <p class="project-location">New Cairo, Egypt</p>
+                        <a href="projects/15_ETERNA_HEALTHCARE.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+                <!-- Project 16 -->
+                <div class="project-card stagger-item resort" data-aos="fade-up">
+                    <img src="assets/images/projects/16_AZHA_SEA_FRONT/cover.png" alt="AZHA SEA FRONT" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">AZHA SEA FRONT</h3>
+                        <p class="project-location">Ain Sokhna</p>
+                        <a href="projects/16_AZHA_SEA_FRONT.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+                <!-- Project 17 -->
+                <div class="project-card stagger-item resort" data-aos="fade-up">
+                    <img src="assets/images/projects/17_JEFFAIRA/cover.png" alt="SAFWA MALL" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">JEFFAIRA</h3>
+                        <p class="project-location">North Coast, Egypt</p>
+                        <a href="projects/17_JEFFAIRA.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+                <!-- Project 18 -->
+                <div class="project-card stagger-item resort" data-aos="fade-up">
+                    <img src="assets/images/projects/18_ALSHUWAYER/cover.png" alt="ALSHUWAYER" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">ALSHUWAYER</h3>
+                        <p class="project-location">Dammam</p>
+                        <a href="projects/18_ALSHUWAYER.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+                <!-- Project 19 -->
+                 <div class="project-card stagger-item resort" data-aos="fade-up">
+                    <img src="assets/images/projects/19_AL-UQAYER_HOUSING/cover.png" alt="ALSHUWAYER" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">AL-UQAYER HOUSING</h3>
+                        <p class="project-location">Hofuf, Saudi Arabia</p>
+                        <a href="projects/19_AL-UQAYER_HOUSING.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+                <!-- Project 20 -->
+                <div class="project-card stagger-item resort" data-aos="fade-up">
+                    <img src="assets/images/projects/20_RASEEL_BEACH/cover.png" alt="ALSHUWAYER" class="project-image">
+                    <div class="project-overlay">
+                        <h3 class="project-title">RASEEL BEACH</h3>
+                        <p class="project-location">Dammam, Saudi Arabia</p>
+                        <a href="projects/20_RASEEL_BEACH.html" class="project-link" data-transition>View Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" data-aos="fade-up" data-aos-delay="400">
+                <a href="#projects" class="btn btn-outline">View All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Professional Experience</h2>
+            
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Nov 2023 - Present</div>
+                        <h3 class="timeline-title">Sets International</h3>
+                        <p class="timeline-location">Urban Designer</p>
+                        <p>Leading landscape and urban design projects, focusing on sustainable development and innovative solutions for complex urban environments.</p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Nov 2021 - Oct 2023</div>
+                        <h3 class="timeline-title">Al Mubarak Engineering Consults</h3>
+                        <p class="timeline-location">Urban Designer, Dammam</p>
+                        <p>Developed comprehensive landscape plans for major projects including ALSHUWAYER (1400 Acre) and RASEEL RESORT (80 Acre) in Dammam.</p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2019 - Oct 2021</div>
+                        <h3 class="timeline-title">Die-stadt Design</h3>
+                        <p class="timeline-location">Landscape Architect</p>
+                        <p>Designed and implemented landscape solutions for various resort and commercial projects, with a focus on environmental sustainability and aesthetic excellence.</p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jan 2018 - Oct 2019</div>
+                        <h3 class="timeline-title">Purescape</h3>
+                        <p class="timeline-location">Landscape Designer</p>
+                        <p>Created detailed landscape designs for residential and commercial projects, collaborating with architects and clients to realize their vision.</p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 5 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Mar 2017 - Jan 2018</div>
+                        <h3 class="timeline-title">Cap Design</h3>
+                        <p class="timeline-location">Junior Landscape Architect</p>
+                        <p>Assisted in the development of landscape plans and presentations, gaining valuable experience in project management and client relations.</p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 6 -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Sep 2016 - Mar 2017</div>
+                        <h3 class="timeline-title">Landmark for Urban Planning</h3>
+                        <p class="timeline-location">Urban Planner</p>
+                        <p>Contributed to urban planning projects, focusing on creating functional and aesthetically pleasing public spaces.</p>
+                    </div>
+                </div>
+                
+                <!-- Timeline Item 7 -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Jul 2016 - Sep 2016</div>
+                        <h3 class="timeline-title">Kemet Airports Consults</h3>
+                        <p class="timeline-location">Technical Office Engineer</p>
+                        <p>Provided technical support for airport landscape and planning projects, ensuring compliance with regulations and standards.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats section bg-shift">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up">
+                    <div class="stat-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="stat-number counter" data-target="50">0</div>
+                    <div class="stat-text">Projects Completed</div>
+                </div>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-number counter" data-target="7">0</div>
+                    <div class="stat-text">Years Experience</div>
+                </div>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number counter" data-target="30">0</div>
+                    <div class="stat-text">Happy Clients</div>
+                </div>
+                
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="stat-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="stat-number counter" data-target="2">0</div>
+                    <div class="stat-text">Countries Worked In</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Egypt</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>elnezily.khaled@gmail.com</p>
+                            <p>khaled.elnezily970@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+20 1146406114</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/khaled-elnezily-b0840812b" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.facebook.com/share/12LUEWfod4t/?mibextid=wwXIfr" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">Khaled <span>Elnezily</span></div>
+            <p class="footer-text">Experienced Landscape Architect with a passion for creating sustainable and visually stunning outdoor environments.</p>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p class="copyright">&copy; 2025 Khaled Elnezily. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/sliders.js"></script>
+    <script defer src="js/animations.js"></script>
+</body>
+</html>
